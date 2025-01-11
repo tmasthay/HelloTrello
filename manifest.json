@@ -1,0 +1,24 @@
+{
+    "name": "Hello World Power-Up",
+    "description": "A simple Trello Power-Up that adds a Hello World button.",
+    "author": "Your Name",
+    "icon": {
+        "url": "https://example.com/icon.png" // Replace with your icon URL
+    },
+    "capabilities": {
+        "board-buttons": {
+            "url": "https://tmasthay.github.io/HelloTrello/index.html" // Replace with your hosted index.html URL
+        }
+    },
+    "connectors": {
+        "iframe": {
+            "url": "https://tmasthay.github.io/HelloTrello/index.html" // Replace with your hosted index.html URL
+        }
+    },
+    "scopes": [],
+    "settings": {
+        "oauth": false,
+        "sso": false,
+        "location": "https://tmasthay.github.io/HelloTrello/settings.html" // Optional: Replace with your settings page URL
+    }
+}

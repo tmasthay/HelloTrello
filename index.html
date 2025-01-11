@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World Trello Power-Up</title>
+    <!-- Include Trello's Power-Up client library -->
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello World Trello Power-Up</h1>
+    <p>This is a simple Trello Power-Up example.</p>
+    <script>
+        // Initialize the Power-Up
+        window.TrelloPowerUp.initialize({
+            'board-buttons': function (t, options) {
+                return [{
+                    icon: 'https://example.com/icon.png', // Replace with your icon URL
+                    text: 'Hello World',
+                    callback: function (t) {
+                        return t.popup({
+                            title: 'Hello, Trello!',
+                            url: 'popup.html',
+                            height: 100
+                        });
+                    }
+                }];
+            }
+        });
+    </script>
+</body>
+
+</html>
